@@ -79,8 +79,13 @@
     <section>
         <h2>About Me</h2>
         <p>
-            Hello! I'm Khanh Le Minh, a 24-year-old passionate developer based in Vietnam. I graduated from the University of Economics and Finance in Ho Chi Minh City with a degree in Information Technology.
+            Hello! I'm Khanh Le Minh, a <span id="age"></span>-year-old passionate developer based in Vietnam. I graduated from the University of Economics and Finance in Ho Chi Minh City with a degree in Information Technology.
         </p>
+        <script>
+            const currentYear = new Date().getFullYear();
+            const age = currentYear - 2000;
+            document.getElementById('age').textContent = age;
+        </script>
         <p>
             In my free time, I enjoy playing chess and exploring the world of technology.
         </p>
